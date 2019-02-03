@@ -23,7 +23,7 @@ class Main extends Component {
     render() {
         const { doDisplayTable } = this.state;
         const names = [
-            'yossi',
+            'Yehuda',
             'yoel',
             'yekutiel',
             'pinhas',
