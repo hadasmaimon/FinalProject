@@ -26,7 +26,7 @@ class Main extends Component {
             'Yehuda',
             'yoel',
             'yekutiel',
-            'pinhas',
+            'Yochanan',
             'yaakov'
         ];
         const phones = [
