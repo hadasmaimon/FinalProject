@@ -1,66 +1,69 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
-// import Chart from '../common/chart';
 import Content from './content';
-//import { Checkbox } from 'semantic-ui-react';
-//import semantic-ui;
-
+import Row from './row';//!!!!!
+import { users, objects } from '../../data/data';
 
 class Main extends Component {
-    clickButton=()=>{
-        return (
-        <div>{'loading'}}></div>
-        
-        
-        
-        )
-        ;
-        
-            
-        }
+
     constructor(props) {
         super(props);
 
         this.state = {
-            doDisplayTable: []
+            first: false,
+            second: false,
+            array: []
         };
     }
 
-    onClick = (e) => {
-        debugger
-        this.setState(prevState => ({
-            doDisplayTable: [...prevState.doDisplayTable, true]
-        }));
+    onFirstClickButton = () => {
+        this.setState({ first: !this.state.first });
     }
 
+    onSecondClickButton = () => {
+        this.setState({ second: !this.state.second });
+    }
+
+
+    onCheck = (id) => {
+        if (!this.state.array.includes(id))
+            this.setState(prevState => ({
+                array: [...prevState.array, id]
+            }));
+        else {
+            var index = this.state.array.indexOf(id);
+            if (index > -1) {
+                this.state.array.splice(index, 1);
+            }
+        }
+    }
+
+
     render() {
-        const { doDisplayTable } = this.state;
-        const names = [
-            'Yehuda',
-            'yoel',
-            'yekutiel',
-            'Yochanan',
-            'yaakov'
-        ];
-        const phones = [
-            '050-6545677',
-            '050-6545677',
-            '050-6545677',
-            '050-6549997',
-            '050-6540677'
-        ];
+        const { first, second } = this.state;
 
         return (
             <div id='main'>
                 <h1 id='title'>Final Project</h1>
-                <h3 id='title'>Users</h3>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <button
+                        id='btn1'
+                        onClick={this.onFirstClickButton}
+                        style={{ width: '100px', height: '100px', alignSelf: 'center', marginRight: '10px' }}
+                    >
+                        <h1>Users</h1>
+                    </button>
+                    <button
+                        id='btn1'
+                        onClick={this.onSecondClickButton}
+                        style={{ width: '150px', height: '100px', alignSelf: 'center' }}
+                    >
+                        <h1>Queastion</h1>
+                    </button>
+                </div>
+
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', }}>
-                {/* <div class="ui checkbox">
-  <input type="checkbox">
-  <label>Label</label>
-</div> */}
-                    {/* <Chart names={names} phones={phones} onClick={this.onClick} /> */}
-                    {doDisplayTable[0] && <table id='userTable' style={{ width: '100%', background: '#eeeeee', alignContent: 'center', borderRadius: '5' }}>
+
+                    {first && <table id='userTable' style={{ width: '100%', background: '#eeeeee', alignContent: 'center', borderRadius: '5' }}>
                         <thead>
                             <tr>
                                 <th style={{ width: '25%', height: '50px' }}>User name</th>
@@ -70,39 +73,13 @@ class Main extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {names.map((name, i) => { return <Content key={i} userName={name} /> })}
+                            {users.map((user, i) => { return <Content key={i} userName={user.name} id={user.id} phoneNumber={user.phone} /> })}
                         </tbody>
                     </table>}
-
-                    {doDisplayTable[1] && <table id='salaryTable' style={{ width: '100%', background: 'orange', alignContent: 'center', borderRadius: '5' }}>
-                        <thead>
-                            <tr>
-                                <th style={{ width: '25%', height: '50px' }}>User name</th>
-                                <th style={{ width: '25%', height: '50px' }}>ID</th>
-                                <th style={{ width: '25%', height: '50px' }}>Phone number</th>
-                                <th style={{ width: '25%', height: '50px' }}>member date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {names.map((name, i) => { return <Content key={i} userName={name} /> })}
-                        </tbody>
-                    </table>}
-
-                    {doDisplayTable[2] && <table id='phoneTable' Fstyle={{ width: '100%', background: 'red', alignContent: 'center', borderRadius: '5' }}>
-                        <thead>
-                            <tr>
-                                <th style={{ width: '25%', height: '50px' }}>User name</th>
-                                <th style={{ width: '25%', height: '50px' }}>ID</th>
-                                <th style={{ width: '25%', height: '50px' }}>Phone number</th>
-                                <th style={{ width: '25%', height: '50px' }}>member date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {names.map((name, i) => { return <Content key={i} userName={name} /> })}
-                        </tbody>
-                    </table>}
-
-                    {/* {<Table striped bordered hover>
+                    <br />
+                    <br />
+                    <br />
+                    {second && <table style={{ textAlign: 'left' }}>
                         <thead>
                             <tr>
                                 <th>ask Jerusalem pepole</th>
@@ -112,28 +89,12 @@ class Main extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>  const CheckboxExampleCheckbox = () => <Checkbox label='are you familiar with literary logic ?' /></td>
-                                <td> const CheckboxExampleCheckbox = () => <Checkbox label='Prefer logical problems? ?' /></td>
-                                <td> const CheckboxExampleCheckbox = () => <Checkbox label='Do you speak business English ?' /></td>
-                                <td> const CheckboxExampleCheckbox = () => <Checkbox label='DO You know this programming language for over a year  ?' />
-                                </td>
-                            </tr>
-
+                            {objects.map((object, i) => { return <Row key={i} onCheck={this.onCheck} array={this.state.array} question={object.question} /> })}
                         </tbody>
-                        </table>}
-                         */}
-                         
-        <button 
-        id='btn1' onClick={this.clickButton()} style={{width:'100px' ,height:'100px' ,alignSelf: 'center' }}><h1>add</h1>
-        </button>
-        
-     
-  
+                    </table>
+                    }
                 </div>
-            </div >
-
-
+            </div>
         );
     };
 }
