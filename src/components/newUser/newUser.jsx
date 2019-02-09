@@ -2,60 +2,263 @@ import React from 'react';
 
 const ApprovalCard = () => {
     return (
-        //איך אני עושה קישור ל SEMENTIC
-        //כל זה העיצוב של הקארד איפה שמים?
         <div class="ui cards">
             <div class="card">
                 <div class="content">
-                    <img class="right floated mini ui image" src="/images/avatar/large/elliot.jpg" />
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/elliot.jpg" /> */}
                     <div class="header">
-                        Elliot Fu
+                        building project
                         </div>
                     <div class="meta">
-                        Friends of Veronika
+                        kind: libarry project
                         </div>
                     <div class="description">
-                        Elliot requested permission to view your contact details
-                         </div>
+                        Do you want to scan monkey project ??ApprovalCard
+                     {/* <b>urgent</b>  */}
+                    </div>
                 </div>
                 <div class="extra content">
                     <div class="ui two buttons">
-                        <div class="ui basic green button">Approve</div>
-                        <div class="ui basic red button">Decline</div>
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="content">
-                    <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" />
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
                     <div class="header">
-                        Jenny Hess
+                        Pogram project
                              </div>
                     <div class="meta">
-                        New Member
+                        kind: litatability project
                           </div>
                     <div class="description">
-                        Jenny wants to add you to the group <b>best friends</b>
+                        Do you want to scan monkey project ??<b>urgent</b>
                     </div>
                 </div>
                 <div class="extra content">
                     <div class="ui two buttons">
-                        <div class="ui basic green button">Approve</div>
-                        <div class="ui basic red button">Decline</div>
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
                     </div>
                 </div>
             </div>
-            <div className="ui card">
-                <div className="content" > are u sure? </div>
-                <div className="extra content" >
-                    <div className="ui two buttons" >
-                        <div className="ui basic green buttons" > Approve</div>
-                        <div className="ui basic red buttons" > Reject</div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    {/* <img class="right floated mini ui image" src="/images/avatar/large/jenny.jpg" /> */}
+                    <div class="header">
+                        shopping project
+                             </div>
+                    <div class="meta">
+                        kind: litatability project
+                          </div>
+                    <div class="description">
+                        Do you want to scan monkey project ??
+                    {/* <b>urgent</b> */}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <div class="ui basic green button">Start</div>
+                        <div class="ui basic red button">Reject to later</div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     );
+    // 
 };
 export default ApprovalCard;
