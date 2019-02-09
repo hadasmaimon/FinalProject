@@ -1,6 +1,5 @@
 import React from 'react';
 import Name from './name';
-import { Button } from 'react-bootstrap';
 
 const Content = ({ userName, id, phoneNumber }) => { //הוא מקבל מהאבא מקומפוננטת מאין
     return (

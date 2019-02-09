@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Main from './components/main';
+import Approve from './components/newUser';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Main />
+        <Approve />
       </div>
     );
   }
