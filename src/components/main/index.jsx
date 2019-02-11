@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Content from './content';
 import Row from './row';//!!!!!
 import { users, objects } from '../../data/data';
-
+ var i =9; //????
 class Main extends Component {
 
     constructor(props) {
@@ -43,19 +43,19 @@ class Main extends Component {
 
         return (
             <div id='main'>
-                <h1 id='title'>Final Project</h1>
+                {/* <h1 id='title'>Final Project</h1> */}
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <button
                         id='btn1'
                         onClick={this.onFirstClickButton}
-                        style={{ width: '100px', height: '100px', alignSelf: 'center', marginRight: '10px' }}
+                        style={{ width: '100px', height: '70px', alignSelf: 'center', marginRight: '10px' }}
                     >
                         <h1>Users</h1>
                     </button>
                     <button
                         id='btn1'
                         onClick={this.onSecondClickButton}
-                        style={{ width: '150px', height: '100px', alignSelf: 'center' }}
+                        style={{ width: '150px', height: '70px', alignSelf: 'center' }}
                     >
                         <h1>Queastion</h1>
                     </button>
@@ -82,7 +82,7 @@ class Main extends Component {
                     {second && <table style={{ textAlign: 'left' }}>
                         <thead>
                             <tr>
-                                <th>ask Jerusalem pepole</th>
+                                <th>ask Jerusalem pepole </th>
                                 <th>ask Ashdod pepole</th>
                                 <th>ask Heifa pepole</th>
                                 <th>ask Tel-Aviv pepole</th>

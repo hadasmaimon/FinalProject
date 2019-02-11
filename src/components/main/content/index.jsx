@@ -7,7 +7,7 @@ const Content = ({ userName, id, phoneNumber }) => { //הוא מקבל מהאב�
             <td style={{ width: '25%' }}><Name name={userName} /></td>
             <td style={{ width: '25%' }}><Name name={id} /></td>
             <td style={{ width: '25%' }}> <Name name={phoneNumber} /></td>
-            <a href='user'>detalis</a>
+            <a href='user' >detalis</a> 
         </tr>
     );
 };

@@ -7,7 +7,7 @@ const Start = ({ color }) => {
             <div style={{ background: color }}>
                 {/* <h1 >M&O</h1> */}
             </div>
-            <img  class='ui small image'style={{ width:1100 ,height:60  }} src={LogoSrc} alt="m&o logo" />
+            <img  class='ui small image'style={{ width:1600 ,height:100  }} src={LogoSrc} alt="m&o logo" />
          
         </div>
     );
