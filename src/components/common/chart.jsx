@@ -1,6 +1,7 @@
 import React from 'react';
 import { BubbleHtml } from 'nivo';
 
+
 const Chart = ({ names, onClick }) => {
 
     return (
