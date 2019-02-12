@@ -2,7 +2,7 @@ import React from 'react';
 import { BubbleHtml } from 'nivo';
 
 
-const Chart = ({ names, onClick }) => {
+const Chart = ({ names = ['Yehuda', 'Shimohon', 'Yoseph'], onClick }) => {
 
     return (
         <BubbleHtml
