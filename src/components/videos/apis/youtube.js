@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = window.axios;
 
 const KEY = 'AIzaSyBXAyimeyDQaq0xckMpjEG4NzYGJR_XTbg';
 
