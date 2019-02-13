@@ -9,28 +9,34 @@ import Chart from '../src/components/common/chart';
 import * as style from './components/tab/styles.scss';
 import { render } from "react-dom";
 import Tabs from './components/tab/tabs';
+import Videos from './components/videos';
 
 
-{/* <InputP color='gray' /> */}
-        
+{/* <InputP color='gray' /> */ }
+
 function App() {
   return (<div> <Start color='gray' />
     <div >
-     
+
       {/* <h1>Tabs Demo</h1> */}
-     <Tabs>
-      <div label="MAIN ">
-      <Main /> <em></em>!
-      </div>
-      <div label="REQUEST">
-      <NewUser /> <em>Thats all</em>!
-      </div>
-      <div label="DIAGRAMS">
-        <Chart/> <em>done</em>!
-      </div>
-    </Tabs>
+      <Tabs>
+        <div label="MAIN " style={{ cursor: 'pointer' }}>
+          <Main /> <em></em>
+        </div>
+        <div label="REQUEST" style={{ cursor: 'pointer' }}>
+          <NewUser /> <em></em>
+        </div>
+        <div id='chartContainer' label="DIAGRAMS" style={{ alignSelf: 'center', cursor: 'pointer' }}>
+          <Chart names={['Yehuda', 'Shimohon', 'Yoseph']} onClick={() => { alert('hi') }} />
+          <em></em>
+        </div>
+        <div id='videosContainer' label="VIDEOS" style={{ alignSelf: 'center', cursor: 'pointer' }}>
+          <Videos /> <em></em>
+        </div>
+      </Tabs>
+
     </div>
-     </div>
+  </div>
   );
 }
 
@@ -39,12 +45,12 @@ function App() {
 // render(<App />, container);// אם אני רוצה להריץ שוב ושוב
 
 export default App;
-// // לעשות שהמסך יהיה בצע בהיר
-// // איך עושים און קליק
-// // איך שומרים משתנה
-// // ואיך עושים גם בצד
-// // איך לקחת תוכן
-// // ספיננר
+    // // לעשות שהמסך יהיה בצע בהיר
+    // // איך עושים און קליק
+    // // איך שומרים משתנה
+    // // ואיך עושים גם בצד
+    // // איך לקחת תוכן
+    // // ספיננר
 // class App extends Component {
 
 //   render() {
@@ -71,9 +77,9 @@ export default App;
 //                 Third
 //             </div>
 //         {/* <button onClick={() => <Redirect to='/newUser' />} /> */}
-        
-        
- 
+
+
+
 //         <div className="row"></div> }
 //         {/* { <Router>
 //            <Switch>

@@ -2,12 +2,12 @@ import React from 'react';
 import { BubbleHtml } from 'nivo';
 
 
-const Chart = ({ names = ['Yehuda', 'Shimohon', 'Yoseph'], onClick }) => {
+const Chart = ({ names = [], onClick = () => { } }) => {
 
     return (
         <BubbleHtml
-            width={900}
-            height={500}
+            width={200}
+            height={300}
             root={{
                 name: 'nivo', color: 'green', children: [
                     {
