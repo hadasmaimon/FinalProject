@@ -1,4 +1,5 @@
 import React from 'react';
+import AlertDialogSlide from '../../common/dialog';
 // import history from '../../../routes/history';
 // import  newUser from '../newUser/index';
 // onFirstClickButton = () => {
@@ -27,16 +28,21 @@ const ApprovalCard = ({ nameOfProject, kind, dateOfDemand }) => {
                 <div className='extra content'>
                     <div className='ui two buttons'>
                         <div className='ui basic green button'
-                            // onClick={() => history.push('analytics/1')}
+                        // onClick={() => history.push('analytics/1')}
                         // יפתח קומפוננטה שמביאה פרויקט כשלוחצים און קליק !!!!!!
                         >
                             Start
                         </div>
                         <div
                             className='ui basic red button'
-                            onClick={() => { document.getElementById(dateOfDemand).style.display = 'none'; }} //?? לעשות alert
+                            onClick={() => {
+
+
+                                // document.getElementById(dateOfDemand).style.display = 'none'; 
+                            }} //?? לעשות alert
                         >
                             Reject</div>
+                        <AlertDialogSlide />
                         {/* /*onClick={  <newUser/>}  יחזיר לקומפוננטה שמביאה פרויקט כשלוחצים און קליק !!!!!! */} */}
                     </div>
                 </div>
