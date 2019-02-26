@@ -1,7 +1,8 @@
 import React from 'react';
 import { BubbleHtml } from 'nivo';
+// import Projects from '../../data/';
 
-
+//////  ולפי צבעים לפי ההספק . להציג את כל הפרויקטים מהרשימה
 const Chart = ({ names = [], onClick = () => { } }) => {
 
     return (
@@ -33,3 +34,4 @@ const Chart = ({ names = [], onClick = () => { } }) => {
 
 
 export default Chart;
+// projects.name

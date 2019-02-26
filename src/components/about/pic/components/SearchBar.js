@@ -30,7 +30,7 @@ class SearchBar extends React.Component {
             </datalist>
             <br />
             <br />
-            <input type='submit' class='ui basic green button' />
+            <input type='submit' className ='ui basic green button' />
           </div>
         </form>
       </div>
