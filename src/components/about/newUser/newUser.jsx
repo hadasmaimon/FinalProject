@@ -34,9 +34,9 @@ const ApprovalCard = ({ nameOfProject, kind, dateOfDemand }) => {
                         </div>
                         <div
                             className='ui basic red button'
-                            onClick={() => { document.getElementById(dateOfDemand).style.display = 'none'; }}
+                            onClick={() => { document.getElementById(dateOfDemand).style.display = 'none'; }} //?? לעשות alert
                         >
-                            Reject to later</div>
+                            Reject</div>
                         {/* /*onClick={  <newUser/>}  יחזיר לקומפוננטה שמביאה פרויקט כשלוחצים און קליק !!!!!! */} */}
                     </div>
                 </div>
