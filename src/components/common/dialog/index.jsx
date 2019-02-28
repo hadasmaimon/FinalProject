@@ -12,46 +12,34 @@ function Transition(props) {
 }
 
 class AlertDialogSlide extends React.Component {
-  state = {
-    open: false,
-  };
 
-  handleClickOpen = () => {
-    this.setState({ open: true });
-  };
-
-  handleClose = () => {
-    this.setState({ open: false });
-  };
 
   render() {
+    const { open ,handleClose,handleYesClose} = this.props;//father data
+
     return (
       <div>
-        <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
-          Slide in alert dialog
-        </Button>
         <Dialog
-          open={this.state.open}
+          open={open}
           TransitionComponent={Transition}
           keepMounted
-          onClose={this.handleClose}
+          onClose={handleClose}
           aria-labelledby="alert-dialog-slide-title"
           aria-describedby="alert-dialog-slide-description"
         >
           <DialogTitle id="alert-dialog-slide-title">
-            {"Use Google's location service?"}
+            {"REJECT ?"}
           </DialogTitle>
           <DialogContent>
             <DialogContentText id="alert-dialog-slide-description">
-              Let Google help apps determine location. This means sending anonymous location data to
-              Google, even when no apps are running.
+              Do you sure you want to reject ?
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary">
-              Disagree
+            <Button onClick={handleClose} color="primary">
+              cancle
             </Button>
-            <Button onClick={this.handleClose} color="primary">
+            <Button onClick={handleYesClose} color="primary">
               Agree
             </Button>
           </DialogActions>

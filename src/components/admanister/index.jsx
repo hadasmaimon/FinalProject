@@ -3,7 +3,7 @@ import Tabs from '../about/tab';
 import Projects from '../about/main';
 import Request from '../about/newUser';
 import Diagrams from '../common/chart';
-// import Graph from '../common/graph';
+import Graph from '../common/graph.jsx';
 
 const InputContainer = () => { //הוא מקבל מהאבא מקומפוננטת מאין . לא עובד
     return (
@@ -20,7 +20,7 @@ const InputContainer = () => { //הוא מקבל מהאבא מקומפוננטת
                     </div>
                     <div id='chartContainer' label='DIAGRAMS' >
                         <Diagrams />
-                        {/* <Graph /> */}
+                        <Graph />
                     </div>
                 </Tabs>
             </div>

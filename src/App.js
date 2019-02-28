@@ -11,5 +11,5 @@ const App = () => {
 export default App;
 
 //משימותתתתת
-// לתקן regect to later לעשות התראה ושיודיע לשולח
-//לבדוק את translate diagram
+//  regect הדס
+//לבדוק את translate , diagrams

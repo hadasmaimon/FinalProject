@@ -1,15 +1,35 @@
 
+export const commonQ = [
+  {
+    question: 'hoe i dovulidation it',
+    answer:"enter the squard ",
+},
+{
+  question: 'hoe i dovulidation it',
+  answer:"enter the squard ",
+},
+{
+  question: 'hoe i dovulidation it',
+  answer:"enter the squard ",
+},
+{
+  question: 'hoe i dovulidation it',
+  answer:"enter the squard ",
+},
+{
+  question: 'hoe i dovulidation it',
+  answer:"enter the squard ",
+}
+]
+
 export const projects = [
     {
-        name: 'project',
-        id: 1,//key:value,
+        name: '090 project',
+        id: 1,//key:value
         phone: '0506545676',
         note:"i need it for 23.09",
-        kindData: 'library project',
         date: '30.10.16',
-        kindData: 'library project',
-        date: '06.10.18'
-        
+        kindData: 'library project',        
     },
     {
         name: 'building project',

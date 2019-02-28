@@ -43,6 +43,9 @@ class HelpUsContainer extends Component {
                         {objects.map((object, i) => { return <Row key={i} onCheck={this.onCheck} array={this.state.array} question={object.question} /> })}
                     </tbody>
                 </table>
+                <button style={{ textAlign: 'center'}}>
+                    SAVE
+                </button>
             </div>
         );
     };

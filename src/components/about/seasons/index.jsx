@@ -32,4 +32,4 @@ class App extends React.Component {
 
 ReactDOM.render(<App />, document.querySelector('#root'));
 
-// export default App;
+export default App;
