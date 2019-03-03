@@ -33,10 +33,10 @@ class HelpUsContainer extends Component {
                 <table style={{ textAlign: 'left' }}>
                     <thead>
                         <tr>
-                            <th>ask Jerusalem pepole </th>
-                            <th>ask Ashdod pepole</th>
-                            <th>ask Heifa pepole</th>
-                            <th>ask Tel-Aviv pepole</th>
+                            <th style={{color:'red'}}>metirial questions </th>
+                            <th style={{color:'blue'}}>personailty quetions</th>
+                            <th style={{color:'grey'}}>questions</th>
+                            <th style={{color:'green'}}>data questions</th>
                         </tr>
                     </thead>
                     <tbody>
