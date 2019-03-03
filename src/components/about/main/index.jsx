@@ -12,11 +12,11 @@ const Main = () => {
                         <th style={{ width: '25%', height: '50px' }}>User name</th>
                         <th style={{ width: '25%', height: '50px' }}>ID</th>
                         <th style={{ width: '25%', height: '50px' }}>Phone number</th>
-                        <th style={{ width: '25%', height: '50px' }}>member date</th>
+                        <th style={{ width: '25%', height: '50px' }}>note </th>
                     </tr>
                 </thead>
                 <tbody>
-                    {projects.map((user, i) => { return <Content key={i} userName={user.name} id={user.id} phoneNumber={user.phone} /> })}
+                    {projects.map((user, i) => { return <Content key={i} userName={user.name} id={user.id} phoneNumber={user.phone} notes={user.note} email={user.email} /> })}
                 </tbody>
             </table>
         </div>
