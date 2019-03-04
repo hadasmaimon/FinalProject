@@ -86,7 +86,7 @@ export const projects = [
     name: 'LOL project',
     id: 7,
     phone: '0506545252',
-    note: "shimon says hi",
+    note: "shimon says HI",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '05.06.98',

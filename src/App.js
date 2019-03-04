@@ -15,3 +15,4 @@ export default App;
 //לבדוק את translate , diagrams
 // administer project גם להוסיף בטבלה תאריך מועדוןוגם התאריך יבוא פרויקט
 //כשעושים reject שימחק data
+// רעיונות ממיכל : הורדת טבלה ,סקיייפ לצור קשר ,גוגל מפות

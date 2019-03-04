@@ -9,8 +9,8 @@ const Main = () => {
             <table id='userTable' style={{ width: '100%', background: '#eeeeee', alignContent: 'center', borderRadius: '5' }}>
                 <thead>
                     <tr>
-                        <th style={{ width: '25%', height: '50px' }}>User name</th>
-                        <th style={{ width: '25%', height: '50px' }}>ID</th>
+                        <th style={{ width: '25%', height: '50px' }}>Project name</th>
+                        <th style={{ width: '25%', height: '50px' }}>Id</th>
                         <th style={{ width: '25%', height: '50px' }}>Phone number</th>
                         <th style={{ width: '25%', height: '50px' }}>note </th>
                     </tr>

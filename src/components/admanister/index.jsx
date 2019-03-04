@@ -2,10 +2,9 @@ import React from 'react';
 import Tabs from '../about/tab';
 import Projects from '../about/main';
 import Request from '../about/newUser';
-import Graph from '../common/graph';
-import DiagramStick from '../common/diagramStick';
-import ResponsiveBar from '../common/responsiveBar';
-
+// import Graph from '../common/graph'; 
+// import ResponsiveBar from '../common/responsiveBar';
+// import picTable from '../../assets/images/Logo1.png'
 const InputContainer = () => { //הוא מקבל מהאבא מקומפוננטת מאין . לא עובד
     return (
         <div style={{ width: '100%' }}>
@@ -15,14 +14,19 @@ const InputContainer = () => { //הוא מקבל מהאבא מקומפוננטת
                 <Tabs>
                     <div label='PROJECTS' >
                         <Projects />
+                         {/* <button  > */}
+                              {/* style={{left: '40px'}} */}
+                             {/* <a href={picTable}  download ="Logo1.png"></a>
+                        </button> */}
                     </div>
+                    {/* הורדת טבלה למחשב */}
                     <div label='REQUEST'>
                         <Request />
                     </div>
                     <div id='chartContainer' label='DIAGRAMS' >
-                        <DiagramStick />
-                        <Graph />
-                        <ResponsiveBar />
+                        {/* <DiagramStick />
+                        <Graph /> */}
+                        {/* <ResponsiveBar /> */}
                     </div>
                 </Tabs>
             </div>
