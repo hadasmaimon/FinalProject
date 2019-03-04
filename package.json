@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
+    "@nivo/bar": "^0.52.1",
+    "@nivo/line": "^0.52.1",
+    "@nivo/pie": "^0.52.1",
     "nivo": "^0.31.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.3",

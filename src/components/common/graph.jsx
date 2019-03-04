@@ -1,14 +1,14 @@
 import React from 'react';
-// import { ResponsiveLine } from '@nivo/line';
+import { ResponsiveLine } from '@nivo/line';
 import { graphs } from '../../data/data';
 // make sure parent container have a defined height when using responsive component,
 // otherwise height will be 0 and no chart will be rendered.
 // website examples showcase many properties, you'll often use just a few of them.
 
-import { ResponsiveLine } from 'nivo';
 const Chart1 = ({ names = [], onClick = () => { } }) => {
-
         return (
+        <div style={{ height: '1000px', width: '1000px' }}>
+        
             <ResponsiveLine height={300}
                 data={graphs}
                 margin={{
@@ -83,6 +83,7 @@ const Chart1 = ({ names = [], onClick = () => { } }) => {
                     }
                 ]}
             />
+            </div>
         );
     };
 

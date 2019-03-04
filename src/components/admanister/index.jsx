@@ -2,9 +2,9 @@ import React from 'react';
 import Tabs from '../about/tab';
 import Projects from '../about/main';
 import Request from '../about/newUser';
-import Diagrams from '../common/chart';
-// import Graph from '../common/graph';
+import Graph from '../common/graph';
 import DiagramStick from '../common/diagramStick';
+import ResponsiveBar from '../common/responsiveBar';
 
 const InputContainer = () => { //הוא מקבל מהאבא מקומפוננטת מאין . לא עובד
     return (
@@ -20,13 +20,9 @@ const InputContainer = () => { //הוא מקבל מהאבא מקומפוננטת
                         <Request />
                     </div>
                     <div id='chartContainer' label='DIAGRAMS' >
-                        <Diagrams />
                         <DiagramStick />
-                        {/* // make sure parent container have a defined height when using responsive component,
-                            // otherwise height will be 0 and no chart will be rendered.
-                            // website examples showcase many properties, you'll often use just a few of them. */}
-
-                        {/* <Graph  /> */}
+                        <Graph />
+                        <ResponsiveBar />
                     </div>
                 </Tabs>
             </div>
