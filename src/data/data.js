@@ -1,7 +1,7 @@
 
 export const commonQ = [
   {
-    question: 'how i dovulidation it ?',
+    question: 'how i do voliation it ?',
     answer: "enter the squard ",
   },
   {
@@ -21,15 +21,14 @@ export const commonQ = [
     answer: " posible",
   }
 ]
-
 export const projects = [
   {
     name: '090 project',
     id: 1,//key:value
     phone: '0506545676',
-    note: "i need it for 23.09",
+    note: "i need it for 08.01",
     memberDate: '30.10.16',
-    kindData: 'library project',
+    kindData: 'we congrats you',
     date: '30.10.16',
     email: 'BB@gmail.com'
   },
@@ -37,7 +36,7 @@ export const projects = [
     name: 'building project',
     id: 2,
     phone: '0506545559',
-    note: "i need it for 23.09",
+    note: "we are very pleasure from your service",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '15.10.17',
@@ -47,7 +46,7 @@ export const projects = [
     name: 'PP project',
     id: 3,
     phone: '0506444676',
-    note: "i need it for 23.09",
+    note: "check the date",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '18.04.98',
@@ -57,7 +56,7 @@ export const projects = [
     name: 'OO project',
     id: 4,
     phone: '0506545555',
-    note: "i need it for 23.09",
+    note: "private code , extra privacy",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '14.05.12',
@@ -67,7 +66,7 @@ export const projects = [
     name: '99 project',
     id: 5,
     phone: '0506545222',
-    note: "i need it for 23.09",
+    note: "i need it for 03.12",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '11.10.03',
@@ -77,7 +76,7 @@ export const projects = [
     name: 'gogo project',
     id: 6,
     phone: '0505555555',
-    note: "i need it for 23.09",
+    note: "i need it for 06.03",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '08.10.92',
@@ -87,7 +86,7 @@ export const projects = [
     name: 'LOL project',
     id: 7,
     phone: '0506545252',
-    note: "i need it for 23.09",
+    note: "shimon says hi",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '05.06.98',
@@ -97,7 +96,7 @@ export const projects = [
     name: '90 project',
     id: 8,
     phone: '0506545222',
-    note: "i need it for 23.09",
+    note: "no command",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '02.05.98',
@@ -117,7 +116,7 @@ export const projects = [
     name: '00 project',
     id: 10,
     phone: '0506545222',
-    note: "i need it for 23.09",
+    note: "thank you",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '16.04.78',
@@ -127,7 +126,7 @@ export const projects = [
     name: '565 project',
     id: 11,
     phone: '0506555556',
-    note: "i need it for 23.09",
+    note: "check the message i send to you",
     memberDate: '30.10.16',
     kindData: 'library project',
     date: '07.09.13',
@@ -163,6 +162,40 @@ export const objects = [
   },
 
 ];
+
+export const datacircle = [
+  {
+    "id": "php",
+    "label": "php",
+    "value": 359,
+    "color": "hsl(105, 70%, 50%)"
+  },
+  {
+    "id": "c",
+    "label": "c",
+    "value": 55,
+    "color": "hsl(253, 70%, 50%)"
+  },
+  {
+    "id": "lisp",
+    "label": "lisp",
+    "value": 448,
+    "color": "hsl(280, 70%, 50%)"
+  },
+  {
+    "id": "stylus",
+    "label": "stylus",
+    "value": 561,
+    "color": "hsl(36, 70%, 50%)"
+  },
+  {
+    "id": "haskell",
+    "label": "haskell",
+    "value": 290,
+    "color": "hsl(146, 70%, 50%)"
+  }
+  ]
+  
 export const graphs = [
   {
     id: "japan",
