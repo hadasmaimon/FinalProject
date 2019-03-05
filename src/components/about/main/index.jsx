@@ -19,6 +19,10 @@ const Main = () => {
                     {projects.map((user, i) => { return <Content key={i} userName={user.name} id={user.id} phoneNumber={user.phone} notes={user.note} email={user.email} /> })}
                 </tbody>
             </table>
+            <br/>
+            <button  className='ui container' style={{color:'green',width: '150px' , height: '80px' ,borderColor:'green'}}>
+             download table data
+            </button>
         </div>
     );
 };

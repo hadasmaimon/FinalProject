@@ -20,9 +20,7 @@ return (<div  className='ui container'>>
         </p>
         <br/>
         <video />
-        {/* <player ref="player">
-        <source src= ""/>
-</player> */}
+       
         <video style={{ width: "550px", textAlign: "center" }} src={require('../../../assets/video/checkmarx.mp4')} controls />
     <br/>
     <br/>

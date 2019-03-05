@@ -42,10 +42,11 @@ class HelpUsContainer extends Component {
                     <tbody>
                         {objects.map((object, i) => { return <Row key={i} onCheck={this.onCheck} array={this.state.array} question={object.question} /> })}
                     </tbody>
-                </table>
-                <button style={{ textAlign: 'center'}}>
-                    SAVE
-                </button>
+                </table> <br/>
+                <button className='ui container' style={{color: 'green' ,width: '150px' , height: '50px' ,borderColor:'green'}}>
+                    send
+                </button><br/>
+                <div style={{fontFamily:'Times New Roman', fontSize: 30,textAlign: "center" }}>Thank you for you'r cooperation </div>
             </div>
         );
     };
